@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#outer{
+            width: 400px;
+            height: 200px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        div.move{
+            width: 2000px;
+            height: 2000px;
+            animation-name: move;
+            animation-duration: 10s;
+            animation-timing-function: steps(3);
+            animation-iteration-count: infinite;
+        }
+        div.move div{
+            width: 400px;
+            height: 200px;
+            float: left;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        @keyframes move{
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: -1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="outer">
+    <div class="move">
+        <div ><img src="images/gi2.jpg"> </div>
+        <div ><img src="images/s2.jpg"></div>
+        <div ><img src="images/g3.jpg"></div>
+    </div>
+</div>
+
+<h1>遇到不会的知识了，就看看动图</h1>
+<br/>
+<h2>Java</h2>
+<a href="https://mrjokersince1997.github.io/My-Notes/#/">Java学习网站</a>
+<br/>
+<h2>Go</h2>
+<a href="http://c.biancheng.net/golang/">Go学习网站</a>
+<br/>
+<h2>HTML CSS JavaScript</h2>
+<a href="https://www.w3school.com.cn/">前端基础学习网站</a>
+</body>
+</html>
